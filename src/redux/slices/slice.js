@@ -1,19 +1,19 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-const authSlice = createSlice({
-  name: 'auth',
-  initialState: {
-    isLoginActive: true,
-  },
-  reducers: {
-    showRegister: (state) => {
-      state.isLoginActive = false
+const containerSlice = createSlice({
+    name: 'container',
+    initialState: {
+        isActive: false,
     },
-    showLogin: (state) => {
-      state.isLoginActive = true
+    reducers: {
+        activate: (state) => {
+            state.isActive = true
+        },
+        deactivate: (state) => {
+            state.isActive = false
+        },
     },
-  },
 })
 
-export const { showRegister, showLogin } = authSlice.actions
-export default authSlice.reducer
+export const { activate, deactivate } = containerSlice.actions
+export default containerSlice.reducer

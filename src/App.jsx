@@ -1,16 +1,14 @@
 import React from 'react'
-import Login from './components/login/Login'
+import './assets/css/style.css'
+import Login from './components/Login/Login'
 import Register from './components/Register/Register'
-import ToggleBox from './components/toggleBox/ToggleBox'
+import ToggleBox from './components/ToggleBox/ToggleBox'
 import { useSelector } from 'react-redux'
 
 const App = () => {
-  const isLoginActive = useSelector((state) => state.auth.isLoginActive)
+  const isActive = useSelector((state) => state.container.isActive)
   return (
-    <div
-      className={`container ${isLoginActive ? '' : 'active'}
-      } relative w-[850px] h-[550px] bg-white rounded-[30px] overflow-hidden m-[20px]`}
-    >
+    <div className={`container ${isActive ? 'active' : ''}`}>
       <Login />
       <Register />
       <ToggleBox />
