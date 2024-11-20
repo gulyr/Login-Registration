@@ -1,8 +1,8 @@
 import React from 'react'
 import './assets/css/style.css'
-import Login from './components/Login/Login'
-import Register from './components/Register/Register'
-import ToggleBox from './components/ToggleBox/ToggleBox'
+import Login from './components/Login/Login.jsx'
+import Register from './components/Register/Register.jsx'
+import ToggleBox from './components/ToggleBox/ToggleBox.jsx'
 import { useSelector } from 'react-redux'
 
 const App = () => {
