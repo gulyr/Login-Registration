@@ -2,7 +2,7 @@ import React from 'react'
 import { FaUser } from 'react-icons/fa6'
 import { IoLockClosed } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
-import SocialIcons from '../SocialIcons/SocialIcons'
+import SocialIcons from '../socialIcons/SocialIcons'
 import { useDispatch } from 'react-redux'
 import { deactivate } from '../../redux/slices/slice'
 

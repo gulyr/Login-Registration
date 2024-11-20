@@ -3,7 +3,7 @@ import { FaEnvelope } from 'react-icons/fa'
 import { FaUser } from 'react-icons/fa6'
 import { IoLockClosed } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
-import SocialIcons from '../SocialIcons/SocialIcons'
+import SocialIcons from '../socialIcons/SocialIcons'
 import { useDispatch } from 'react-redux'
 import { activate } from '../../redux/slices/slice'
 
